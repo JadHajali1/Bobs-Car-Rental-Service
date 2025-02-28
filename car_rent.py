@@ -1,4 +1,4 @@
-class vehicle:
+class Vehicle:
 
     brand = ""
     model = ""
@@ -11,18 +11,24 @@ class vehicle:
         self.year = year
         self.rental_price_per_day = rental_price_per_day
 
+    def display_info(self):
+        print(f"")
+
+    def calculate_rental_cost(self, days):
+        return self.rental_price_per_day * days
+
+
    
 
 
-class type:
+class Car(Vehicle):
     seating_capacity = 0
+
+
+
+
+class Bike(Vehicle):
     engine_capacity = ""
-
-    def __init__(self, seating_capacity, engine_capacity):
-        self.seating_capacity = seating_capacity
-        self.engine_capacity = engine_capacity
-        
-
 
 
     
