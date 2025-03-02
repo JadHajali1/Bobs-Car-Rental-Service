@@ -22,8 +22,6 @@ class Vehicle:
         return self.get_rental_price_per_day() * days
 
 
-   
-
 
 class Car(Vehicle):
     def __init__(self, brand, model, year, seating_capacity,rental_price_per_day):
@@ -46,4 +44,26 @@ class Bike(Vehicle):
         print(f"{self.brand} {self.model}, Year:{self.year},Engine: {self.engine_capacity}, Rental Price: ${self.get_rental_price_per_day()}/day")
 
 
-    
+def show_vehicle_info(vehicle):
+    vehicle.display_info()
+
+
+
+
+def car_types():
+    print("****************************************")
+    print("chose your type of Car:")
+    print("1.Toyota Corolla --> $44/day ")
+    print("2.Toyota Camry --> $50/day")
+    print("3. Honda CRV --> $40/day")
+    print("4.Suzuki Solio --> $48/day")
+    print("5.Ford Tierra --> $45/day")
+    print("****************************************")
+
+def bike_types():
+    print("****************************************")
+    print("chose your type of Bike:")
+    print("1.Bikes Seaside --> $35/day")
+    print("2.Aima Big sur --> $25/day")
+    print("3.Muon Aspire --> $30/day")
+    print("4.Jamis Coda S1 --> $34/day")
